@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="rectangulo.js"></script>
+    <script src="general.js"></script>
+    <script src="dinosaurio.js"></script>
+    <script src="impuesto.js"></script>
+    <script src="sueldo.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rectangulo</h1>
+    function superficie(alto, ancho){
+        return alto*ancho;
+    }
+    let res = superficie(2, 6);
+    
+        function perimetro(altura, altura, ancho, ancho){
+        return altura+altura+ancho+ancho;
+    }
+    let p = perimetro([2, 2, 4, 4]);
+
+    <h1>General</h1>
+    function fomulaGeneral(a, b, c){
+        discriminante = ((b ** 2) -(4 *(a*c)));
+        raiz =Math.sqrt(discriminante)
+        x1= (((-b) + raiz) / (2 * a));
+        x2= (((-b) + raiz) / (2 * a));
+        return "El valor de x es:" +x1+ "\n El primer valor de x es:" + x1;
+    }
+    let a=promp("¿Cual es el valor de a?");
+
+    <h1>Impuesto</h1>
+    function impuestos(cost){
+        if (cost <= 20){
+    
+            return ("sin impuesto");
+        } 
+        else if (cost >= 20 ){
+            return (((cost * 0.30) +  cost).toFixed(2));
+        } 
+        else if (cost > 100 && cost < 500){
+            return (((cost * 0.40) + cost).toFixed(2));
+        }
+        else if (cost >= 500 ){
+            return (((cost * 0.50) + cost).toFixed(2));
+        }
+    }
+
+    <h1>sueldo</h1>
+    let sueldofinal
+function categ(categoria){
+    if (categoria == 1){
+        return "categoria 1";
+    }
+    else if (categoria == 2){
+        return "categoria 2";
+
+    }
+    else if (categoria == 3){
+        return "categoria 3";
+
+    }
+    else if (categoria == 4){
+        return "categoria 4";
+
+    }
+}
+function sueldo(sueldo, ca){
+    if (ca == 1){
+        return (((sueldo * 0.15) + sueldo).toFixed(2));
+    }
+    else if (ca == 2){
+        return (((sueldo * 0.10) + sueldo).toFixed(2));
+
+    }
+    else if (ca == 3){
+        return (((sueldo * 0.8) + sueldo).toFixed(2));
+
+    }
+    else if (ca == 4){
+        return (((sueldo * 0.7) + sueldo).toFixed(2));
+        
+
+    }
+}
+let cadena = ["categoria: " + categ(3) + "  " + " sueldo " +  sueldo(288273.2 ,3)];
+
+<h1>Dinosaurio</h1>
+function convDino(nombre, peso, longitud) {
+    var pesoK = ((peso / 1000).toFixed(2))
+    var longiM = ((longitud / 0.3047).toFixed(2))
+     return ["el nombre es:  " + nombre +"  " + pesoK + "  " +  longiM ];
+}
+
+</body>
+</html>
